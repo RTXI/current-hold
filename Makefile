@@ -1,10 +1,10 @@
-PLUGIN_NAME = Ihold
+PLUGIN_NAME = current_hold
 
-HEADERS = Ihold.h
+HEADERS = current-hold.h
 
 LIBS = 
 
-SOURCES = Ihold.cpp \
+SOURCES = current-hold.cpp 
 
 ### Do not edit below this line ###
 
