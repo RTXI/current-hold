@@ -5,11 +5,11 @@
 
 ![Current Hold GUI](current-hold.png)
 
-###Input Channels
+####Input Channels
 None
 
-###Output Channels
+####Output Channels
 1. Command
 
-###Parameters
+####Parameters
 1. Holding Current (pA)
