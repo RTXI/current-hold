@@ -5,9 +5,6 @@
 
 ![Current Hold GUI](current-hold.png)
 
-####Input Channels
-None
-
 ####Output Channels
 1. Command
 
