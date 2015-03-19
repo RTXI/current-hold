@@ -37,9 +37,10 @@ static DefaultGUIModel::variable_t vars[] = {
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 
 Ihold::Ihold(void) : DefaultGUIModel("Holding Current", ::vars, ::num_vars), current(-100e-12), on(false) {
-	update( INIT);
+	update( INIT );
 	DefaultGUIModel::createGUI(vars, num_vars);
 	refresh();
+	QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
 
 Ihold::~Ihold(void) {}
