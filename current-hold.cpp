@@ -36,9 +36,13 @@ static DefaultGUIModel::variable_t vars[] = {
 
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 
-Ihold::Ihold(void) : DefaultGUIModel("Holding Current", ::vars, ::num_vars), current(-100e-12), on(false) {
-	update( INIT );
+Ihold::Ihold(void) : DefaultGUIModel("Holding Current", ::vars, ::num_vars) {
 	DefaultGUIModel::createGUI(vars, num_vars);
+	
+	current = -100e-12;
+	on = false;
+	
+	update( INIT );
 	refresh();
 	QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
@@ -52,7 +56,7 @@ void Ihold::execute(void) {
 void Ihold::update(DefaultGUIModel::update_flags_t flag) {
 	switch (flag) {
 		case INIT:
-			setParameter("Holding Current (pA)", QString::number(current * 1e12)); // convert from A to nA
+			setParameter("Holding Current (pA)", QString::number(current * 1e12)); // convert from A to pA
 			break;
 		
 		case MODIFY:
