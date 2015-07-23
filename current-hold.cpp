@@ -30,7 +30,7 @@ extern "C" Plugin::Object *createRTXIPlugin(void) {
 }
 
 static DefaultGUIModel::variable_t vars[] = {
-	{ "Command", "", DefaultGUIModel::OUTPUT, },
+	{ "Command", "Static current output (pA)", DefaultGUIModel::OUTPUT, },
 	{ "Holding Current (pA)", "Holding Current (pA)", DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
 };
 
