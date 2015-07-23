@@ -6,11 +6,11 @@
 ![Current Hold GUI](current-hold.png)
 
 <!--start-->
-Description pending
+This module outputs a static value set by the user. Nothing else. This is an extremely simply module.  
 <!--end-->
 
 ####Output Channels
-1. Command
+1. output(0) : Command - current output set by the "Holding Current" parameter
 
 ####Parameters
-1. Holding Current (pA)
+1. Holding Current (pA) - current output from the module
