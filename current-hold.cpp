@@ -44,7 +44,7 @@ Ihold::Ihold(void) : DefaultGUIModel("Holding Current", ::vars, ::num_vars) {
 	
 	update( INIT );
 	refresh();
-	QTimer::singleShot(0, this, SLOT(resizeMe()));
+	resizeMe();
 }
 
 Ihold::~Ihold(void) {}
