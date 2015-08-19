@@ -6,7 +6,7 @@
 ![Current Hold GUI](current-hold.png)
 
 <!--start-->
-This module outputs a static value set by the user. Nothing else. This is an extremely simply module.  
+This module outputs a static value set by the user. Nothing else. This is an extremely simple module.  
 <!--end-->
 
 ####Output Channels
